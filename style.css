@@ -8,6 +8,7 @@ body{
 
 .image-radius{
   border-radius: 50%;
+  box-shadow: 0px 0px 4px violet;
 }
 
 .para{
@@ -18,8 +19,7 @@ body{
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 3% 3%;
-  width: 90%;
-  margin: auto;
+  justify-content: center;
   grid-template-areas:
   "Daniel-Clifford Daniel-Clifford Jonathan-Walters Kira-Whittle"
   "Jeanette-Harmon Patrick-Abrams Patrick-Abrams Kira-Whittle";
