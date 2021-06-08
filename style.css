@@ -1,0 +1,91 @@
+body{
+  font-size: 13px;
+  background: hsla(0, 0%, 81%,0.7);
+}
+.image{
+  display: flex;
+}
+
+.image-radius{
+  border-radius: 50%;
+}
+
+.para{
+  margin-right: 3%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 3% 3%;
+  width: 90%;
+  margin: auto;
+  grid-template-areas:
+  "Daniel-Clifford Daniel-Clifford Jonathan-Walters Kira-Whittle"
+  "Jeanette-Harmon Patrick-Abrams Patrick-Abrams Kira-Whittle";
+}
+
+.Daniel-Clifford{
+  background: hsl(263, 55%, 52%);
+  color: hsla(0, 0%, 81%,0.7);
+  border-radius: 15px;
+  padding: 3%;
+  grid-area: Daniel-Clifford;
+}
+
+.Daniel-Clifford h2, .Jonathan-Walters h2, .Patrick-Abrams h2
+{
+  color: hsl(0, 0%, 100%);
+}
+
+.Jonathan-Walters{
+  background: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%,0.7);
+  border-radius: 15px;
+  padding: 3%;
+  grid-area: Jonathan-Walters;
+}
+
+.Patrick-Abrams{
+  background: hsl(219, 29%, 14%);
+  color: hsla(0, 0%, 81%,0.7);
+  border-radius: 10px;
+  padding: 3%;
+  grid-area: Patrick-Abrams;
+}
+
+.Jeanette-Harmon{
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 3%;
+  grid-area: Jeanette-Harmon;
+}
+
+.Kira-Whittle{
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 3%;
+  grid-area: Kira-Whittle;
+}
+
+.Daniel-name, .Jonathan-name, .Patrick-name
+{
+  color: hsl(0, 0%, 100%);
+}
+
+.Graduate{
+  color: hsla(0, 0%, 81%,0.7);
+}
+
+@media screen and (max-width: 720px) {
+  .container{
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+.Daniel-Clifford, .Jonathan-Walters, .Patrick-Abrams, .Kira-Whittle, .Jeanette-Harmon
+{
+  margin-bottom: 3%;
+}
+
+}
